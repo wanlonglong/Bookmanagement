@@ -17,7 +17,7 @@ const routes = [
     children:[
       {
         path:"/BookManage",
-        name:"Search BooK",
+        name:"Search Book",
         component:BookManage
       },
       {

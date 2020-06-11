@@ -17,7 +17,6 @@ class SpringboottestApplicationTests {
     void contextLoads() {
         PageRequest pageRequest = PageRequest.of(0,6);
         Page<Book> page = repository.findAll(pageRequest);
-        int i = 0;
     }
 
 
