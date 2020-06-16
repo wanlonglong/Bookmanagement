@@ -17,12 +17,12 @@ const routes = [
     children:[
       {
         path:"/BookManage",
-        name:"Search Book",
+        name:"Show books",
         component:BookManage
       },
       {
         path:"/AddBook",
-        name:"Add Book",
+        name:"Add book",
         component:AddBook
       }
     ]
