@@ -23,7 +23,7 @@ class SpringboottestApplicationTests {
 
     @Test
     void findById(){
-        Book book = repository.findById(1).get();
+        Book book = repository.findById(2).get();
         System.out.println(book);
     }
 
