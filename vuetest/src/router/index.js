@@ -4,6 +4,7 @@ import BookManage from '../views/BookManage'
 import AddBook from '../views/AddBook'
 import Index from '../views/Index'
 import BookUpdate from '../views/BookUpdate'
+import FindBook from '../views/FindBook'
 
 Vue.use(VueRouter)
 
@@ -24,6 +25,11 @@ const routes = [
         path:"/AddBook",
         name:"Add book",
         component:AddBook
+      },
+      {
+        path:"/FindBook",
+            name:"Find book",
+          component:FindBook
       }
     ]
   },

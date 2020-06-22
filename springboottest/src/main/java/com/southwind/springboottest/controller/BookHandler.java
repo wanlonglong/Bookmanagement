@@ -7,6 +7,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/book")
 public class BookHandler{
@@ -47,5 +49,10 @@ public class BookHandler{
     @DeleteMapping("/deleteById/{id}")
     public void deleteById(@PathVariable("id") Integer id){
         bookRepository.deleteById(id);
+    }
+
+    @GetMapping("/findByAuthor/{author}")
+    public List<Book> findByAuthor(@PathVariable("author") String author){
+      return bookRepository.findByAuthor(author);
     }
 }
